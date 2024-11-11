@@ -29,3 +29,15 @@ void mouseBattle(int rHP, int mATK)
     if (rHP > 0) 
         printf("Uh oh, the Rattata still lives with %d HP!\n", rHP);
 }
+
+int main()
+{
+    int rHP, mATK;
+    printf("Input Rattata's HP: ");
+    scanf("%d", &rHP);
+    printf("Input Maushold's ATK: ");
+    scanf("%d", &mATK);
+
+    mouseBattle(rHP, mATK);
+    return 0;
+}
